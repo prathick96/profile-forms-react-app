@@ -5,12 +5,18 @@ import Header from "./components/Header";
 import ErrorBoundary from "./components/ErrorBoundry";
 import Forms from "./Pages/Form";
 import Profile from "./Pages/Profile";
+import Home from "./Pages/Home";
 
 export default function App() {
   return (
     <div className="App">
       <Header />
       <Switch>
+        <Route exact path="/">
+          <ErrorBoundary>
+            <Home />
+          </ErrorBoundary>
+        </Route>
         <Route exact path="/form">
           <ErrorBoundary>
             <Forms />

@@ -17,7 +17,7 @@ const Header = () => {
   return (
     <div>
       <Navbar color="#0e101c" dark expand="md" className="mb-5">
-        <NavLink className="navbar-brand" to="/form">
+        <NavLink className="navbar-brand" to="/">
           Profile Forms App
         </NavLink>
         <NavbarToggler onClick={toggle} />
