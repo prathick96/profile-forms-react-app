@@ -21,7 +21,7 @@ const Profile = () => {
       {profile.map((element, index) => {
         return (
           <>
-            <div className="card p-3 my-3">
+            <div className="card p-3 my-3" style={{ opacity: 0.8 }}>
               <Media>
                 <Media left>
                   <Media object data-src={element.profilePic} alt="" />
